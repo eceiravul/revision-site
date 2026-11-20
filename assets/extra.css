@@ -6,7 +6,7 @@
 .hero:not(.small) .wrap{position:relative;z-index:1}
 @keyframes kb{from{transform:scale(1) translate(0,0)}to{transform:scale(1.12) translate(-1.5%,1.5%)}}
 
-h2::after{content:"";display:block;width:64px;height:4px;margin:12px 0 0;border-radius:4px;background:linear-gradient(90deg,#58d6ff,#a77bff,#ff7bd0)}
+h2::after{content:"";display:block;width:64px;height:4px;margin:12px 0 0;border-radius:4px;background:#58d6ff}
 .center h2::after{margin-left:auto;margin-right:auto}
 .hero h1::after{content:none}
 
@@ -17,13 +17,6 @@ h2::after{content:"";display:block;width:64px;height:4px;margin:12px 0 0;border-
 .btn{transition:transform .25s ease,box-shadow .25s ease,filter .25s ease}
 .btn:hover{transform:translateY(-2px);box-shadow:0 8px 24px rgba(88,214,255,.35)}
 
-.stats div:nth-child(1){border-top-color:#58d6ff}
-.stats div:nth-child(2){border-top-color:#a77bff}
-.stats div:nth-child(3){border-top-color:#ff7bd0}
-.stats div:nth-child(4){border-top-color:#35d0c3}
-.tl article:not(.soon):nth-child(4n+1) small{color:#58d6ff}
-.tl article:not(.soon):nth-child(4n+2) small{color:#a77bff}
-.tl article:not(.soon):nth-child(4n+3) small{color:#ff7bd0}
 
 .slot{background:linear-gradient(110deg,var(--navy2) 30%,#1a2160 50%,var(--navy2) 70%);background-size:220% 100%;animation:shine 3.2s linear infinite}
 @keyframes shine{from{background-position:120% 0}to{background-position:-120% 0}}
