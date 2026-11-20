@@ -81,7 +81,7 @@ section{padding:76px 0}
 .avatar img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover}
 .person span{color:#dbe2ff;font-size:15px;display:block}
 
-.diagram{background:#0e1442;border:1px solid var(--line);border-radius:18px;padding:12px;max-width:640px;margin:34px auto 0}
+.diagram{max-width:660px;margin:34px auto 0}
 .note{border-left:4px solid var(--warm);padding:4px 0 4px 18px;color:var(--muted);max-width:720px;margin-top:26px}
 .num{font:800 34px Georgia,serif;color:var(--accent)}
 
