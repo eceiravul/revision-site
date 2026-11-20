@@ -37,15 +37,6 @@ h2::after{content:"";display:block;width:64px;height:4px;margin:12px 0 0;border-
   .card,.btn,.duo img{transition:none}
 }
 
-/* smooth page transitions */
-@keyframes pagein{from{opacity:0;transform:translateY(8px)}to{opacity:1;transform:none}}
-main{animation:pagein .35s ease-out both}
-html{background:#0a0e2a}
-/* browsers with cross-document view transitions: keep the header still, crossfade the rest */
-@view-transition{navigation:auto}
-header{view-transition-name:site-header}
-::view-transition-old(root),::view-transition-new(root){animation-duration:.18s}
-::view-transition-group(site-header){animation-duration:0s}
 
 /* "...and many more" banner */
 .many{margin-top:40px;padding:46px 26px;border-radius:26px;text-align:center;position:relative;overflow:hidden;border:1px solid var(--line);
@@ -63,12 +54,4 @@ header{view-transition-name:site-header}
 /* Instagram button (disabled until the account link exists) */
 .btn .ig{display:inline-block;vertical-align:-4px;margin-right:10px}
 .btn.disabled{background:transparent;color:var(--muted);border:2px dashed var(--line);cursor:default;pointer-events:none}
-@media (prefers-reduced-motion:reduce){@view-transition{navigation:none}main{animation:none}.many-title,.chips li{animation:none}.many-title{background-position:0 0}}
-
-/* sliding box behind the active menu item */
-nav ul{position:relative}
-nav a{position:relative;z-index:1}
-.nav-ind{position:absolute;top:50%;height:38px;margin-top:-19px;border-radius:10px;z-index:0;pointer-events:none;
-  background:rgba(88,214,255,.14);box-shadow:inset 0 0 0 1px rgba(88,214,255,.4);
-  transition:left .32s cubic-bezier(.4,0,.2,1),width .32s cubic-bezier(.4,0,.2,1)}
-nav.has-ind a[aria-current="page"]{box-shadow:none;border-radius:10px;color:#fff}
+@media (prefers-reduced-motion:reduce){.many-title,.chips li{animation:none}.many-title{background-position:0 0}}
