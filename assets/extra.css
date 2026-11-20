@@ -38,15 +38,13 @@ h2::after{content:"";display:block;width:64px;height:4px;margin:12px 0 0;border-
 }
 
 /* smooth page transitions */
-@keyframes pagein{from{opacity:0;transform:translateY(10px)}to{opacity:1;transform:none}}
-main{animation:pagein .7s cubic-bezier(.2,.7,.2,1) both}
-body.leaving main{opacity:0;transform:translateY(-12px);transition:opacity .28s ease,transform .28s ease}
-body.leaving footer{opacity:0;transition:opacity .28s ease}
+@keyframes pagein{from{opacity:0;transform:translateY(8px)}to{opacity:1;transform:none}}
+main{animation:pagein .35s ease-out both}
 html{background:#0a0e2a}
 /* browsers with cross-document view transitions: keep the header still, crossfade the rest */
 @view-transition{navigation:auto}
 header{view-transition-name:site-header}
-::view-transition-old(root),::view-transition-new(root){animation-duration:.4s}
+::view-transition-old(root),::view-transition-new(root){animation-duration:.18s}
 ::view-transition-group(site-header){animation-duration:0s}
 
 /* "...and many more" banner */
@@ -72,5 +70,5 @@ nav ul{position:relative}
 nav a{position:relative;z-index:1}
 .nav-ind{position:absolute;top:50%;height:38px;margin-top:-19px;border-radius:10px;z-index:0;pointer-events:none;
   background:rgba(88,214,255,.14);box-shadow:inset 0 0 0 1px rgba(88,214,255,.4);
-  transition:left .6s cubic-bezier(.65,0,.25,1),width .6s cubic-bezier(.65,0,.25,1)}
+  transition:left .32s cubic-bezier(.4,0,.2,1),width .32s cubic-bezier(.4,0,.2,1)}
 nav.has-ind a[aria-current="page"]{box-shadow:none;border-radius:10px;color:#fff}
