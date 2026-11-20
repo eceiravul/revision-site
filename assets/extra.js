@@ -9,7 +9,7 @@
     if(u.origin!==location.origin||u.pathname===location.pathname) return;
     ev.preventDefault();
     document.body.classList.add('leaving');
-    setTimeout(function(){location.href=u.href},230);
+    setTimeout(function(){location.href=u.href},290);
   });
   var sel='main h2,main .lead,.card,.tl article,.stats div,.slot,.person,.cardimg,.wide-photo,.duo .ph,.diagram,.note';
   var els=[].slice.call(document.querySelectorAll(sel)).filter(function(e){return !e.closest('.hero')});
