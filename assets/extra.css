@@ -55,3 +55,5 @@ h2::after{content:"";display:block;width:64px;height:4px;margin:12px 0 0;border-
 .btn .ig{display:inline-block;vertical-align:-4px;margin-right:10px}
 .btn.disabled{background:transparent;color:var(--muted);border:2px dashed var(--line);cursor:default;pointer-events:none}
 @media (prefers-reduced-motion:reduce){.many-title,.chips li{animation:none}.many-title{background-position:0 0}}
+
+@media (min-width:861px){.g4.team{grid-template-columns:repeat(5,1fr)}}
